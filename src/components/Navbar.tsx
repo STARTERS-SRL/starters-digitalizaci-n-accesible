@@ -25,23 +25,23 @@ export function Navbar() {
         scrolled ? "glass shadow-lg shadow-black/20" : "bg-transparent"
       }`}
     >
-      <nav className="max-w-7xl mx-auto px-6 lg:px-10 h-18 py-4 flex items-center justify-between">
-        <a href="#top" className="flex items-center gap-3 group">
+      <nav className="max-w-7xl mx-auto px-6 lg:px-10 h-20 py-4 flex items-center justify-between gap-6">
+        <a href="#top" className="flex items-center gap-3 group shrink-0">
           <div className="relative">
             <div className="absolute inset-0 bg-accent blur-md opacity-60 group-hover:opacity-100 transition-opacity" />
-            <div className="relative w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-              <Code2 className="w-5 h-5 text-background" strokeWidth={2.5} />
+            <div className="relative w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center">
+              <Code2 className="w-6 h-6 text-background" strokeWidth={2.5} />
             </div>
           </div>
           <div className="leading-tight">
-            <div className="font-display font-bold text-lg text-foreground">Starters</div>
-            <div className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground">
+            <div className="font-display font-bold text-xl text-foreground">Starters</div>
+            <div className="text-[11px] uppercase tracking-[0.18em] text-muted-foreground">
               Software Development
             </div>
           </div>
         </a>
 
-        <ul className="hidden lg:flex items-center gap-9">
+        <ul className="hidden md:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
           {links.map((l) => (
             <li key={l.href}>
               <a
@@ -54,7 +54,7 @@ export function Navbar() {
           ))}
         </ul>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 shrink-0">
           <a
             href={WHATSAPP}
             target="_blank"
@@ -66,7 +66,7 @@ export function Navbar() {
           </a>
           <button
             onClick={() => setOpen(!open)}
-            className="lg:hidden p-2 text-foreground"
+            className="md:hidden p-2 text-foreground"
             aria-label="Menu"
           >
             {open ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -75,7 +75,7 @@ export function Navbar() {
       </nav>
 
       {open && (
-        <div className="lg:hidden glass border-t border-border">
+        <div className="md:hidden glass border-t border-border">
           <ul className="px-6 py-4 space-y-3">
             {links.map((l) => (
               <li key={l.href}>
