@@ -33,7 +33,8 @@ export function Footer() {
         <div>
           <div className="font-display font-semibold mb-4 text-sm">Contacto</div>
           <a href="mailto:starters.devsoft@gmail.com" className="text-sm text-muted-foreground hover:text-accent inline-flex items-center gap-2">
-            <Mail className="w-4 h-4" /> starters.devsoft@gmail.com
+            <Mail className="w-4 h-4" />
+            <span>starters.devsoft@gmail.com</span>
           </a>
           <div className="flex items-center gap-3 mt-5">
             {[Github, Linkedin, Twitter].map((Icon, i) => (
