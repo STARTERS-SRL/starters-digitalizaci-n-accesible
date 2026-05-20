@@ -1,3 +1,5 @@
+"use client";
+
 import { useState, type FormEvent } from "react";
 import { Mail, Phone, Clock, Send } from "lucide-react";
 import { toast } from "sonner";
@@ -74,8 +76,16 @@ export function Contact() {
           <Reveal delay={150}>
             <div className="space-y-5">
               <ContactCard icon={Mail} title="Email" lines={["starters.devsoft@gmail.com"]} />
-              <ContactCard icon={Phone} title="Teléfonos / WhatsApp" lines={["+591 67423265", "+591 74129764"]} />
-              <ContactCard icon={Clock} title="Atención 24/7" lines={["Respondemos al instante, cualquier día, a cualquier hora."]} />
+              <ContactCard
+                icon={Phone}
+                title="Teléfonos / WhatsApp"
+                lines={["+591 67423265", "+591 74129764"]}
+              />
+              <ContactCard
+                icon={Clock}
+                title="Atención 24/7"
+                lines={["Respondemos al instante, cualquier día, a cualquier hora."]}
+              />
               <a
                 href="https://wa.me/59167423265"
                 target="_blank"
@@ -112,7 +122,9 @@ function ContactCard({
       <div>
         <div className="font-display font-semibold mb-1">{title}</div>
         {lines.map((l) => (
-          <div key={l} className="text-sm text-muted-foreground">{l}</div>
+          <div key={l} className="text-sm text-muted-foreground">
+            {l}
+          </div>
         ))}
       </div>
     </div>

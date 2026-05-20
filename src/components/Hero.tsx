@@ -5,10 +5,16 @@ const WHATSAPP = "https://wa.me/59167423265";
 
 export function Hero() {
   return (
-    <section id="top" className="relative min-h-screen flex items-center pt-28 pb-20 overflow-hidden">
+    <section
+      id="top"
+      className="relative min-h-screen flex items-center pt-28 pb-20 overflow-hidden"
+    >
       {/* glows */}
       <div className="absolute top-1/4 left-1/4 w-[40rem] h-[40rem] bg-primary/30 rounded-full blur-[120px] animate-pulse-glow" />
-      <div className="absolute bottom-0 right-0 w-[36rem] h-[36rem] bg-accent/20 rounded-full blur-[120px] animate-pulse-glow" style={{ animationDelay: "2s" }} />
+      <div
+        className="absolute bottom-0 right-0 w-[36rem] h-[36rem] bg-accent/20 rounded-full blur-[120px] animate-pulse-glow"
+        style={{ animationDelay: "2s" }}
+      />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,var(--background)_85%)]" />
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-14 items-center w-full">
@@ -21,15 +27,13 @@ export function Hero() {
           </Reveal>
           <Reveal delay={100}>
             <h1 className="font-display font-bold text-5xl md:text-6xl lg:text-7xl leading-[1.05] tracking-tight">
-              Tus ideas al{" "}
-              <span className="text-gradient">código</span>, sin pagar de más
+              Tus ideas al <span className="text-gradient">código</span>, sin pagar de más
             </h1>
           </Reveal>
           <Reveal delay={200}>
             <p className="mt-7 text-lg text-muted-foreground max-w-xl leading-relaxed">
-              Construimos aplicaciones y sitios web a la medida de tu negocio,
-              con la calidad de una agencia premium y precios pensados para
-              emprendedores reales.
+              Construimos aplicaciones y sitios web a la medida de tu negocio, con la calidad de una
+              agencia premium y precios pensados para emprendedores reales.
             </p>
           </Reveal>
           <Reveal delay={300}>
@@ -54,11 +58,20 @@ export function Hero() {
           </Reveal>
           <Reveal delay={400}>
             <div className="mt-12 flex items-center gap-8 text-xs text-muted-foreground">
-              <div><span className="text-foreground font-display text-2xl font-bold">50+</span><div>Proyectos entregados</div></div>
+              <div>
+                <span className="text-foreground font-display text-2xl font-bold">50+</span>
+                <div>Proyectos entregados</div>
+              </div>
               <div className="h-10 w-px bg-border" />
-              <div><span className="text-foreground font-display text-2xl font-bold">24/7</span><div>Soporte directo</div></div>
+              <div>
+                <span className="text-foreground font-display text-2xl font-bold">24/7</span>
+                <div>Soporte directo</div>
+              </div>
               <div className="h-10 w-px bg-border" />
-              <div><span className="text-foreground font-display text-2xl font-bold">100%</span><div>A tu medida</div></div>
+              <div>
+                <span className="text-foreground font-display text-2xl font-bold">100%</span>
+                <div>A tu medida</div>
+              </div>
             </div>
           </Reveal>
         </div>

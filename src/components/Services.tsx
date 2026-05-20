@@ -29,15 +29,13 @@ export function Services() {
       <div className="max-w-7xl mx-auto relative">
         <Reveal>
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <div className="text-xs uppercase tracking-[0.25em] text-accent mb-4">
-              Servicios
-            </div>
+            <div className="text-xs uppercase tracking-[0.25em] text-accent mb-4">Servicios</div>
             <h2 className="text-4xl md:text-5xl font-bold">
               Nuestros <span className="text-gradient">Servicios</span>
             </h2>
             <p className="mt-5 text-muted-foreground">
-              Soluciones digitales completas, diseñadas para impulsar tu marca
-              sin sacrificar calidad ni romper el banco.
+              Soluciones digitales completas, diseñadas para impulsar tu marca sin sacrificar
+              calidad ni romper el banco.
             </p>
           </div>
         </Reveal>

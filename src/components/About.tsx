@@ -37,14 +37,14 @@ export function About() {
             Sobre <span className="text-gradient">Starters</span>
           </h2>
           <p className="text-muted-foreground leading-relaxed text-lg mb-5">
-            Nacimos con una misión clara: democratizar la tecnología. Creemos
-            que cualquier emprendedor, sin importar su presupuesto, merece
-            tener software profesional que potencie su negocio.
+            Nacimos con una misión clara: democratizar la tecnología. Creemos que cualquier
+            emprendedor, sin importar su presupuesto, merece tener software profesional que potencie
+            su negocio.
           </p>
           <p className="text-muted-foreground leading-relaxed mb-8">
-            Cada proyecto que entregamos es la prueba viva de nuestra
-            propuesta: calidad de agencia, precios al alcance de cualquiera, y
-            la cercanía de un equipo que se involucra como si fuera tu socio.
+            Cada proyecto que entregamos es la prueba viva de nuestra propuesta: calidad de agencia,
+            precios al alcance de cualquiera, y la cercanía de un equipo que se involucra como si
+            fuera tu socio.
           </p>
           <ul className="space-y-3">
             {points.map((p) => (

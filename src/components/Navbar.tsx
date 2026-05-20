@@ -1,3 +1,5 @@
+"use client";
+
 import { useState, useEffect } from "react";
 import { Menu, X, MessageCircle, Code2 } from "lucide-react";
 

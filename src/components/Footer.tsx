@@ -11,34 +11,59 @@ export function Footer() {
             </div>
             <div>
               <div className="font-display font-bold text-lg">Starters</div>
-              <div className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground">Software Development</div>
+              <div className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground">
+                Software Development
+              </div>
             </div>
           </div>
           <p className="mt-5 text-sm text-muted-foreground max-w-sm">
-            Software profesional al alcance de todos. Convertimos tus ideas en
-            productos digitales de alta calidad.
+            Software profesional al alcance de todos. Convertimos tus ideas en productos digitales
+            de alta calidad.
           </p>
         </div>
 
         <div>
           <div className="font-display font-semibold mb-4 text-sm">Navegación</div>
           <ul className="space-y-2 text-sm text-muted-foreground">
-            <li><a href="#servicios" className="hover:text-accent transition">Servicios</a></li>
-            <li><a href="#nosotros" className="hover:text-accent transition">Nosotros</a></li>
-            <li><a href="#portafolio" className="hover:text-accent transition">Portafolio</a></li>
-            <li><a href="#contacto" className="hover:text-accent transition">Contacto</a></li>
+            <li>
+              <a href="#servicios" className="hover:text-accent transition">
+                Servicios
+              </a>
+            </li>
+            <li>
+              <a href="#nosotros" className="hover:text-accent transition">
+                Nosotros
+              </a>
+            </li>
+            <li>
+              <a href="#portafolio" className="hover:text-accent transition">
+                Portafolio
+              </a>
+            </li>
+            <li>
+              <a href="#contacto" className="hover:text-accent transition">
+                Contacto
+              </a>
+            </li>
           </ul>
         </div>
 
         <div>
           <div className="font-display font-semibold mb-4 text-sm">Contacto</div>
-          <a href="mailto:starters.devsoft@gmail.com" className="text-sm text-muted-foreground hover:text-accent inline-flex items-center gap-2">
+          <a
+            href="mailto:starters.devsoft@gmail.com"
+            className="text-sm text-muted-foreground hover:text-accent inline-flex items-center gap-2"
+          >
             <Mail className="w-4 h-4" />
             <span>starters.devsoft@gmail.com</span>
           </a>
           <div className="flex items-center gap-3 mt-5">
             {[Github, Linkedin, Twitter].map((Icon, i) => (
-              <a key={i} href="#" className="w-9 h-9 rounded-lg glass flex items-center justify-center hover:border-accent/50 hover:text-accent transition">
+              <a
+                key={i}
+                href="#"
+                className="w-9 h-9 rounded-lg glass flex items-center justify-center hover:border-accent/50 hover:text-accent transition"
+              >
                 <Icon className="w-4 h-4" />
               </a>
             ))}
