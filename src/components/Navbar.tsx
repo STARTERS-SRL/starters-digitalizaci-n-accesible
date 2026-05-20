@@ -29,20 +29,7 @@ export function Navbar() {
     >
       <nav className="max-w-7xl mx-auto px-6 lg:px-10 h-20 py-4 flex items-center justify-between gap-6">
         <a href="#top" className="flex items-center gap-3 group shrink-0">
-          <div className="relative">
-            <div className="absolute inset-0 bg-accent blur-md opacity-60 group-hover:opacity-100 transition-opacity" />
-            <div className="relative w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-              <Code2 className="w-6 h-6 text-background" strokeWidth={2.5} />
-            </div>
-          </div>
-          <div className="leading-tight">
-            <div className="font-orbitron text-xl text-foreground uppercase tracking-[0.35em]">
-              STARTERS
-            </div>
-            <div className="font-montserrat text-[11px] font-light uppercase tracking-[0.22em] text-muted-foreground">
-              SOFTWARE DEVELOPMENT
-            </div>
-          </div>
+          <img src="/logo.png" alt="Starters Logo" className="h-10 w-auto object-contain" />
         </a>
 
         <ul className="hidden md:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">

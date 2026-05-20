@@ -6,15 +6,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-10">
         <div className="md:col-span-2">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-              <Code2 className="w-5 h-5 text-background" strokeWidth={2.5} />
-            </div>
-            <div>
-              <div className="font-display font-bold text-lg">Starters</div>
-              <div className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground">
-                Software Development
-              </div>
-            </div>
+            <img src="/logo.png" alt="Starters Logo" className="h-10 w-auto object-contain" />
           </div>
           <p className="mt-5 text-sm text-muted-foreground max-w-sm">
             Software profesional al alcance de todos. Convertimos tus ideas en productos digitales
