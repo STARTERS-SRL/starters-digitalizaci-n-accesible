@@ -36,9 +36,11 @@ export function Navbar() {
             </div>
           </div>
           <div className="leading-tight">
-            <div className="font-display font-bold text-xl text-foreground">Starters</div>
-            <div className="text-[11px] uppercase tracking-[0.18em] text-muted-foreground">
-              Software Development
+            <div className="font-orbitron text-xl text-foreground uppercase tracking-[0.35em]">
+              STARTERS
+            </div>
+            <div className="font-montserrat text-[11px] font-light uppercase tracking-[0.22em] text-muted-foreground">
+              SOFTWARE DEVELOPMENT
             </div>
           </div>
         </a>

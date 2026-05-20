@@ -1,6 +1,19 @@
 import type { Metadata } from "next";
+import { Montserrat, Orbitron } from "next/font/google";
 import "./globals.css";
 import { Providers } from "@/components/Providers";
+
+const orbitron = Orbitron({
+  weight: "700",
+  subsets: ["latin"],
+  variable: "--font-orbitron-family",
+});
+
+const montserrat = Montserrat({
+  weight: "300",
+  subsets: ["latin"],
+  variable: "--font-montserrat-family",
+});
 
 export const metadata: Metadata = {
   title: "Starters — Software a tu medida sin pagar de más",
@@ -19,7 +32,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es">
+    <html lang="es" className={`${orbitron.variable} ${montserrat.variable}`}>
       <body>
         <Providers>{children}</Providers>
       </body>
