@@ -1,13 +1,13 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Menu, X, MessageCircle, Code2 } from "lucide-react";
+import { Menu, X, MessageCircle } from "lucide-react";
 
 const WHATSAPP = "https://wa.me/59167423265";
 const links = [
   { href: "#servicios", label: "Servicios" },
   { href: "#nosotros", label: "Nosotros" },
-  { href: "#portafolio", label: "Portafolio" },
+  { href: "#proceso", label: "Proceso" },
   { href: "#contacto", label: "Contacto" },
 ];
 
@@ -30,6 +30,14 @@ export function Navbar() {
       <nav className="max-w-7xl mx-auto px-6 lg:px-10 h-20 py-4 flex items-center justify-between gap-6">
         <a href="#top" className="flex items-center gap-3 group shrink-0">
           <img src="/logo.png" alt="Starters Logo" className="h-10 w-auto object-contain" />
+          <div className="leading-tight">
+            <div className="font-orbitron font-bold text-xl text-foreground uppercase tracking-[0.35em]">
+              STARTERS
+            </div>
+            <div className="font-montserrat text-[11px] font-light uppercase tracking-[0.22em] text-muted-foreground">
+              SOFTWARE DEVELOPMENT
+            </div>
+          </div>
         </a>
 
         <ul className="hidden md:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">

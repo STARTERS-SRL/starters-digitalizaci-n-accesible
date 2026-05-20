@@ -16,7 +16,7 @@ export default function HomePage() {
         <Hero />
         <Services />
         <About />
-        <section id="portafolio" className="relative py-32 px-6 lg:px-10">
+        <section id="proceso" className="relative py-32 px-6 lg:px-10">
           <div className="absolute top-1/3 right-0 w-96 h-96 bg-accent/15 rounded-full blur-[120px]" />
           <div className="max-w-7xl mx-auto relative">
             <Reveal>
