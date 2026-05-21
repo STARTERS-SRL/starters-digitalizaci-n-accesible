@@ -1,71 +1,149 @@
-import { Code2, Github, Linkedin, Twitter, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, MapPin, MessageCircle, Phone, Twitter } from "lucide-react";
+
+const navigationLinks = [
+  { label: "Servicios", href: "#servicios" },
+  { label: "Nosotros", href: "#nosotros" },
+  { label: "Proceso", href: "#proceso" },
+  { label: "Portafolio", href: "#portafolio" },
+  { label: "Contacto", href: "#contacto" },
+];
+
+const services = [
+  "Desarrollo Web",
+  "Aplicaciones y Sistemas",
+  "Mantenimiento y Soporte",
+];
+
+const socialLinks = [
+  { icon: Linkedin, label: "LinkedIn", href: "#" },
+  { icon: Twitter, label: "Twitter", href: "#" },
+  { icon: Github, label: "GitHub", href: "#" },
+];
 
 export function Footer() {
   return (
-    <footer className="relative border-t border-border py-14 px-6 lg:px-10 mt-10">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-10">
-        <div className="md:col-span-2">
-          <div className="flex items-center gap-3">
-            <img src="/logo.png" alt="Starters Logo" className="h-10 w-auto object-contain" />
-          </div>
-          <p className="mt-5 text-sm text-muted-foreground max-w-sm">
-            Software profesional al alcance de todos. Convertimos tus ideas en productos digitales
-            de alta calidad.
+    <footer className="relative overflow-hidden px-6 py-14 lg:px-10">
+      <div className="absolute -top-24 left-0 h-72 w-72 rounded-full bg-primary/15 blur-[110px]" />
+      <div className="absolute right-0 bottom-0 h-80 w-80 rounded-full bg-accent/10 blur-[120px]" />
+
+      <div className="relative mx-auto grid max-w-7xl gap-10 sm:grid-cols-2 lg:grid-cols-[1.3fr_0.8fr_1fr_1.25fr_0.8fr]">
+        <div>
+          <a href="#top" className="inline-flex items-center">
+            <img src="/logo.png" alt="STARTERS" className="h-11 w-auto object-contain" />
+          </a>
+          <p className="mt-5 max-w-sm text-sm leading-relaxed text-muted-foreground">
+            Software profesional al alcance de todos. Conectamos tus ideas en soluciones digitales
+            que transforman.
           </p>
+
+          <div className="mt-5 flex items-center gap-3">
+            {socialLinks.map(({ icon: Icon, label, href }) => (
+              <a
+                key={label}
+                href={href}
+                aria-label={label}
+                className="flex h-10 w-10 items-center justify-center rounded-xl border border-border bg-white/[0.03] text-muted-foreground transition hover:border-accent/50 hover:text-accent hover:shadow-[0_0_28px_-16px_var(--accent)]"
+              >
+                <Icon className="h-4 w-4" />
+              </a>
+            ))}
+          </div>
         </div>
 
         <div>
-          <div className="font-display font-semibold mb-4 text-sm">Navegación</div>
-          <ul className="space-y-2 text-sm text-muted-foreground">
+          <h2 className="font-display mb-5 text-sm font-semibold uppercase tracking-[0.12em] text-foreground">
+            Navegación
+          </h2>
+          <ul className="space-y-3 text-sm text-muted-foreground">
+            {navigationLinks.map((link) => (
+              <li key={link.href}>
+                <a href={link.href} className="transition hover:text-accent">
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <h2 className="font-display mb-5 text-sm font-semibold uppercase tracking-[0.12em] text-foreground">
+            Servicios
+          </h2>
+          <ul className="space-y-3 text-sm text-muted-foreground">
+            {services.map((service) => (
+              <li key={service}>{service}</li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <h2 className="font-display mb-5 text-sm font-semibold uppercase tracking-[0.12em] text-foreground">
+            Contacto
+          </h2>
+          <ul className="space-y-3 text-sm text-muted-foreground">
             <li>
-              <a href="#servicios" className="hover:text-accent transition">
-                Servicios
+              <a
+                href="mailto:starters.devsoft@gmail.com"
+                className="inline-flex items-center gap-3 transition hover:text-accent"
+              >
+                <Mail className="h-4 w-4 text-accent" />
+                starters.devsoft@gmail.com
+              </a>
+            </li>
+            <li className="inline-flex items-center gap-3">
+              <Phone className="h-4 w-4 text-accent" />
+              Teléfonos / WhatsApp
+            </li>
+            <li>
+              <a
+                href="https://wa.me/59167423265"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-3 transition hover:text-accent"
+              >
+                <MessageCircle className="h-4 w-4 text-accent" />
+                +591 67423265
               </a>
             </li>
             <li>
-              <a href="#nosotros" className="hover:text-accent transition">
-                Nosotros
+              <a
+                href="https://wa.me/59174129764"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-3 transition hover:text-accent"
+              >
+                <MessageCircle className="h-4 w-4 text-accent" />
+                +591 74129764
               </a>
             </li>
-            <li>
-              <a href="#portafolio" className="hover:text-accent transition">
-                Portafolio
-              </a>
-            </li>
-            <li>
-              <a href="#contacto" className="hover:text-accent transition">
-                Contacto
-              </a>
+            <li className="inline-flex items-center gap-3">
+              <MapPin className="h-4 w-4 text-accent" />
+              Bolivia
             </li>
           </ul>
         </div>
 
         <div>
-          <div className="font-display font-semibold mb-4 text-sm">Contacto</div>
-          <a
-            href="mailto:starters.devsoft@gmail.com"
-            className="text-sm text-muted-foreground hover:text-accent inline-flex items-center gap-2"
-          >
-            <Mail className="w-4 h-4" />
-            <span>starters.devsoft@gmail.com</span>
-          </a>
-          <div className="flex items-center gap-3 mt-5">
-            {[Github, Linkedin, Twitter].map((Icon, i) => (
+          <h2 className="font-display mb-5 text-sm font-semibold uppercase tracking-[0.12em] text-foreground">
+            Síguenos
+          </h2>
+          <div className="flex items-center gap-3">
+            {socialLinks.map(({ icon: Icon, label, href }) => (
               <a
-                key={i}
-                href="#"
-                className="w-9 h-9 rounded-lg glass flex items-center justify-center hover:border-accent/50 hover:text-accent transition"
+                key={label}
+                href={href}
+                aria-label={label}
+                className="flex h-11 w-11 items-center justify-center rounded-xl border border-border bg-white/[0.03] text-muted-foreground transition hover:border-accent/50 hover:text-accent hover:shadow-[0_0_28px_-16px_var(--accent)]"
               >
-                <Icon className="w-4 h-4" />
+                <Icon className="h-5 w-5" />
               </a>
             ))}
           </div>
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto mt-12 pt-6 border-t border-border text-xs text-muted-foreground flex flex-wrap justify-between gap-2">
-        <div>© {new Date().getFullYear()} Starters. Todos los derechos reservados.</div>
-        <div>Hecho con cariño en Bolivia.</div>
+      <div className="relative mx-auto mt-12 max-w-7xl pt-2 text-xs text-muted-foreground">
+        © 2025 Starters. Todos los derechos reservados.
       </div>
     </footer>
   );

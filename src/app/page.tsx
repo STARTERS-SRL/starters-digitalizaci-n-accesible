@@ -2,6 +2,7 @@ import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { Services } from "@/components/Services";
 import { About } from "@/components/About";
+import { Portfolio } from "@/components/Portfolio";
 import { ClipboardList, Code2, Rocket } from "lucide-react";
 import { Reveal } from "@/components/Reveal";
 import { Contact } from "@/components/Contact";
@@ -10,7 +11,10 @@ import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen text-foreground">
+    <div className="relative isolate min-h-screen overflow-hidden bg-background text-foreground">
+      <div className="pointer-events-none fixed top-1/4 left-1/4 -z-10 h-[40rem] w-[40rem] rounded-full bg-primary/20 blur-[140px]" />
+      <div className="pointer-events-none fixed right-0 bottom-0 -z-10 h-[36rem] w-[36rem] rounded-full bg-accent/15 blur-[140px]" />
+      <div className="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(circle_at_center,transparent_0%,var(--background)_85%)]" />
       <Navbar />
       <main>
         <Hero />
@@ -76,6 +80,7 @@ export default function HomePage() {
             </div>
           </div>
         </section>
+        <Portfolio />
         <Contact />
       </main>
       <Footer />
