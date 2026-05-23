@@ -60,12 +60,7 @@ export function About() {
                 className="w-full h-[500px] w-auto object-cover"
                 priority
               />
-              <div className="absolute -bottom-6 left-4 max-w-[14rem] rounded-2xl border border-white/10 bg-black p-5 sm:left-8">
-                <div className="font-display text-4xl font-bold text-[#3B82F6]">+5</div>
-                <div className="mt-1 text-sm leading-relaxed text-white/90">
-                  años impulsando ideas digitales
-                </div>
-              </div>
+              
             </div>
             {/* FIN MODIFICACIÓN */}
           </Reveal>
