@@ -7,10 +7,9 @@ export function FloatingWhatsApp() {
       target="_blank"
       rel="noreferrer"
       aria-label="WhatsApp"
-      className="fixed bottom-6 right-6 z-40 group"
+      className="fixed bottom-6 right-6 z-40"
     >
-      <span className="absolute inset-0 rounded-full bg-accent/60 blur-xl animate-pulse-glow" />
-      <span className="relative flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-br from-primary to-accent text-background shadow-2xl shadow-accent/40 group-hover:scale-110 transition-transform">
+      <span className="flex items-center justify-center w-14 h-14 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition-colors">
         <MessageCircle className="w-6 h-6" />
       </span>
     </a>

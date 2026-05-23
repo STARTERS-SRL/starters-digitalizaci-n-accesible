@@ -24,17 +24,17 @@ export function Navbar() {
   return (
     <header
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
-        scrolled ? "glass shadow-lg shadow-black/20" : "bg-transparent"
+        scrolled ? "glass bg-black/80" : "bg-transparent"
       }`}
     >
       <nav className="max-w-7xl mx-auto px-6 lg:px-10 h-20 py-4 flex items-center justify-between gap-6">
         <a href="#top" className="flex items-center gap-3 group shrink-0">
           <img src="/logo.png" alt="Starters Logo" className="h-10 w-auto object-contain" />
           <div className="leading-tight">
-            <div className="font-orbitron font-bold text-xl text-foreground uppercase tracking-[0.35em]">
+            <div className="font-bold text-xl text-foreground uppercase tracking-[0.35em]">
               STARTERS
             </div>
-            <div className="font-montserrat text-[11px] font-light uppercase tracking-[0.22em] text-muted-foreground">
+            <div className="text-[11px] font-light uppercase tracking-[0.22em] text-muted-foreground">
               SOFTWARE DEVELOPMENT
             </div>
           </div>
@@ -58,7 +58,7 @@ export function Navbar() {
             href={WHATSAPP}
             target="_blank"
             rel="noreferrer"
-            className="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium bg-gradient-to-r from-primary to-accent text-background hover:shadow-[0_0_30px_-5px_var(--accent)] transition-all"
+            className="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium bg-blue-600 text-white hover:bg-blue-700 transition-colors"
           >
             <MessageCircle className="w-4 h-4" />
             Cotizar por WhatsApp
@@ -91,7 +91,7 @@ export function Navbar() {
               href={WHATSAPP}
               target="_blank"
               rel="noreferrer"
-              className="sm:hidden inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium bg-gradient-to-r from-primary to-accent text-background"
+              className="sm:hidden inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium bg-blue-600 text-white hover:bg-blue-700 transition-colors"
             >
               <MessageCircle className="w-4 h-4" /> Cotizar por WhatsApp
             </a>

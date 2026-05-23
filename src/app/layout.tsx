@@ -1,18 +1,11 @@
 import type { Metadata } from "next";
-import { Montserrat, Orbitron } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import { Providers } from "@/components/Providers";
 
-const orbitron = Orbitron({
-  weight: "700",
+const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-orbitron-family",
-});
-
-const montserrat = Montserrat({
-  weight: "300",
-  subsets: ["latin"],
-  variable: "--font-montserrat-family",
+  variable: "--font-sans-family",
 });
 
 export const metadata: Metadata = {
@@ -32,8 +25,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className={`${orbitron.variable} ${montserrat.variable}`}>
-      <body>
+    <html lang="es" className={`dark ${inter.variable}`}>
+      <body className={inter.className}>
         <Providers>{children}</Providers>
       </body>
     </html>

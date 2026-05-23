@@ -22,16 +22,13 @@ const socialLinks = [
 
 export function Footer() {
   return (
-    <footer className="relative overflow-hidden px-6 py-14 lg:px-10">
-      <div className="absolute -top-24 left-0 h-72 w-72 rounded-full bg-primary/15 blur-[110px]" />
-      <div className="absolute right-0 bottom-0 h-80 w-80 rounded-full bg-accent/10 blur-[120px]" />
-
+    <footer className="relative overflow-hidden px-6 py-14 lg:px-10 bg-black border-t border-white/10">
       <div className="relative mx-auto grid max-w-7xl gap-10 sm:grid-cols-2 lg:grid-cols-[1.3fr_0.8fr_1fr_1.25fr_0.8fr]">
         <div>
           <a href="#top" className="inline-flex items-center">
             <img src="/logo.png" alt="STARTERS" className="h-11 w-auto object-contain" />
           </a>
-          <p className="mt-5 max-w-sm text-sm leading-relaxed text-muted-foreground">
+          <p className="mt-5 max-w-sm text-sm leading-relaxed text-gray-400">
             Software profesional al alcance de todos. Conectamos tus ideas en soluciones digitales
             que transforman.
           </p>
@@ -42,7 +39,7 @@ export function Footer() {
                 key={label}
                 href={href}
                 aria-label={label}
-                className="flex h-10 w-10 items-center justify-center rounded-xl border border-border bg-white/[0.03] text-muted-foreground transition hover:border-accent/50 hover:text-accent hover:shadow-[0_0_28px_-16px_var(--accent)]"
+                className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-zinc-900 text-gray-400 transition-colors hover:border-blue-600/50 hover:text-blue-600"
               >
                 <Icon className="h-4 w-4" />
               </a>
@@ -51,13 +48,13 @@ export function Footer() {
         </div>
 
         <div>
-          <h2 className="font-display mb-5 text-sm font-semibold uppercase tracking-[0.12em] text-foreground">
+          <h2 className="font-display mb-5 text-sm font-semibold uppercase tracking-[0.12em] text-white">
             Navegación
           </h2>
-          <ul className="space-y-3 text-sm text-muted-foreground">
+          <ul className="space-y-3 text-sm text-gray-400">
             {navigationLinks.map((link) => (
               <li key={link.href}>
-                <a href={link.href} className="transition hover:text-accent">
+                <a href={link.href} className="transition-colors hover:text-blue-600">
                   {link.label}
                 </a>
               </li>
@@ -66,10 +63,10 @@ export function Footer() {
         </div>
 
         <div>
-          <h2 className="font-display mb-5 text-sm font-semibold uppercase tracking-[0.12em] text-foreground">
+          <h2 className="font-display mb-5 text-sm font-semibold uppercase tracking-[0.12em] text-white">
             Servicios
           </h2>
-          <ul className="space-y-3 text-sm text-muted-foreground">
+          <ul className="space-y-3 text-sm text-gray-400">
             {services.map((service) => (
               <li key={service}>{service}</li>
             ))}
@@ -77,21 +74,21 @@ export function Footer() {
         </div>
 
         <div>
-          <h2 className="font-display mb-5 text-sm font-semibold uppercase tracking-[0.12em] text-foreground">
+          <h2 className="font-display mb-5 text-sm font-semibold uppercase tracking-[0.12em] text-white">
             Contacto
           </h2>
-          <ul className="space-y-3 text-sm text-muted-foreground">
+          <ul className="space-y-3 text-sm text-gray-400">
             <li>
               <a
                 href="mailto:starters.devsoft@gmail.com"
-                className="inline-flex items-center gap-3 transition hover:text-accent"
+                className="inline-flex items-center gap-3 transition-colors hover:text-blue-600"
               >
-                <Mail className="h-4 w-4 text-accent" />
+                <Mail className="h-4 w-4 text-[#3B82F6]" />
                 starters.devsoft@gmail.com
               </a>
             </li>
             <li className="inline-flex items-center gap-3">
-              <Phone className="h-4 w-4 text-accent" />
+              <Phone className="h-4 w-4 text-[#3B82F6]" />
               Teléfonos / WhatsApp
             </li>
             <li>
@@ -99,9 +96,9 @@ export function Footer() {
                 href="https://wa.me/59167423265"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-3 transition hover:text-accent"
+                className="inline-flex items-center gap-3 transition-colors hover:text-blue-600"
               >
-                <MessageCircle className="h-4 w-4 text-accent" />
+                <MessageCircle className="h-4 w-4 text-[#3B82F6]" />
                 +591 67423265
               </a>
             </li>
@@ -110,21 +107,21 @@ export function Footer() {
                 href="https://wa.me/59174129764"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-3 transition hover:text-accent"
+                className="inline-flex items-center gap-3 transition-colors hover:text-blue-600"
               >
-                <MessageCircle className="h-4 w-4 text-accent" />
+                <MessageCircle className="h-4 w-4 text-[#3B82F6]" />
                 +591 74129764
               </a>
             </li>
             <li className="inline-flex items-center gap-3">
-              <MapPin className="h-4 w-4 text-accent" />
+              <MapPin className="h-4 w-4 text-[#3B82F6]" />
               Bolivia
             </li>
           </ul>
         </div>
 
         <div>
-          <h2 className="font-display mb-5 text-sm font-semibold uppercase tracking-[0.12em] text-foreground">
+          <h2 className="font-display mb-5 text-sm font-semibold uppercase tracking-[0.12em] text-white">
             Síguenos
           </h2>
           <div className="flex items-center gap-3">
@@ -133,7 +130,7 @@ export function Footer() {
                 key={label}
                 href={href}
                 aria-label={label}
-                className="flex h-11 w-11 items-center justify-center rounded-xl border border-border bg-white/[0.03] text-muted-foreground transition hover:border-accent/50 hover:text-accent hover:shadow-[0_0_28px_-16px_var(--accent)]"
+                className="flex h-11 w-11 items-center justify-center rounded-xl border border-white/10 bg-zinc-900 text-gray-400 transition-colors hover:border-blue-600/50 hover:text-blue-600"
               >
                 <Icon className="h-5 w-5" />
               </a>
@@ -142,7 +139,7 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="relative mx-auto mt-12 max-w-7xl pt-2 text-xs text-muted-foreground">
+      <div className="relative mx-auto mt-12 max-w-7xl pt-2 text-xs text-gray-400">
         © 2025 Starters. Todos los derechos reservados.
       </div>
     </footer>

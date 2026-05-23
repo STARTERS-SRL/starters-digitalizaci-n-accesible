@@ -55,21 +55,17 @@ const benefits = [
 
 export function Services() {
   return (
-    <section id="servicios" className="relative overflow-hidden px-6 py-28 lg:px-10">
-      <div className="absolute top-10 left-1/2 h-[32rem] w-[32rem] -translate-x-1/2 rounded-full bg-primary/15 blur-[130px]" />
-      <div className="absolute top-1/3 -left-32 h-[30rem] w-[30rem] rounded-full bg-primary/20 blur-[130px]" />
-      <div className="absolute right-0 bottom-10 h-[34rem] w-[34rem] rounded-full bg-accent/15 blur-[140px]" />
-
+    <section id="servicios" className="relative overflow-hidden px-6 py-28 lg:px-10 bg-black">
       <div className="relative mx-auto max-w-7xl">
         <Reveal>
           <div className="mx-auto mb-14 max-w-3xl text-center">
-            <div className="mb-4 text-xs font-semibold uppercase tracking-[0.4em] text-accent">
+            <div className="mb-4 text-xs font-semibold uppercase tracking-[0.4em] text-[#3B82F6]">
               SERVICIOS
             </div>
-            <h2 className="font-display text-4xl font-bold text-foreground md:text-5xl lg:text-6xl">
-              Nuestros <span className="text-gradient">Servicios</span>
+            <h2 className="font-display text-4xl font-bold text-white md:text-5xl lg:text-6xl">
+              Nuestros <span className="text-[#3B82F6]">Servicios</span>
             </h2>
-            <p className="mt-5 text-base leading-relaxed text-muted-foreground md:text-lg">
+            <p className="mt-5 text-base leading-relaxed text-gray-400 md:text-lg">
               Desarrollamos soluciones digitales completas, diseñadas para impulsar tu marca,
               mejorar tu presencia digital y generar resultados reales.
             </p>
@@ -82,22 +78,20 @@ export function Services() {
 
             return (
               <Reveal key={service.title} delay={index * 100} className="h-full">
-                <article className="group relative flex h-full min-h-[20rem] flex-col overflow-hidden rounded-2xl border border-border glass p-6 shadow-2xl shadow-primary/10 transition-all duration-300 hover:-translate-y-1 hover:border-accent/40 hover:shadow-accent/10 lg:p-7">
-                  <div className="absolute -right-16 -top-16 h-40 w-40 rounded-full bg-accent/10 blur-3xl opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-
+                <article className="group relative flex h-full min-h-[20rem] flex-col overflow-hidden rounded-2xl border border-white/10 bg-black p-6 transition-colors duration-300 hover:border-blue-600/50 lg:p-7">
                   <div className="relative flex flex-1 flex-col">
-                    <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-primary/30 to-accent/30 text-accent shadow-[0_0_30px_-18px_var(--accent)]">
+                    <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-blue-600/20 text-[#3B82F6]">
                       <Icon className="h-8 w-8" strokeWidth={1.8} />
                     </div>
 
-                    <h3 className="font-display text-2xl font-bold leading-tight text-foreground">
+                    <h3 className="font-display text-2xl font-bold leading-tight text-white">
                       {service.title}
                     </h3>
-                    <p className="mt-4 flex-1 text-base leading-relaxed text-muted-foreground">
+                    <p className="mt-4 flex-1 text-base leading-relaxed text-gray-400">
                       {service.desc}
                     </p>
 
-                    <div className="mt-7 inline-flex items-center text-accent transition-transform duration-300 group-hover:translate-x-1">
+                    <div className="mt-7 inline-flex items-center text-[#3B82F6] transition-colors duration-300 group-hover:text-[#3B82F6]">
                       <ArrowRight className="h-7 w-7" strokeWidth={1.7} />
                     </div>
                   </div>
@@ -109,7 +103,7 @@ export function Services() {
 
         <div className="mt-20">
           <Reveal>
-            <h3 className="text-center text-sm font-semibold uppercase tracking-[0.34em] text-accent md:text-base">
+            <h3 className="text-center text-sm font-semibold uppercase tracking-[0.34em] text-[#3B82F6] md:text-base">
               ¿Por qué elegir STARTERS?
             </h3>
           </Reveal>
@@ -120,15 +114,15 @@ export function Services() {
 
               return (
                 <Reveal key={benefit.title} delay={index * 90} className="h-full">
-                  <article className="group flex h-full items-start gap-4 rounded-2xl border border-border glass p-5 shadow-2xl shadow-primary/10 transition-all duration-300 hover:-translate-y-1 hover:border-accent/40">
-                    <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-primary/20 to-accent/20 text-accent">
+                  <article className="group flex h-full items-start gap-4 rounded-2xl border border-white/10 bg-black p-5 transition-colors duration-300 hover:border-blue-600/50">
+                    <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-blue-600/20 text-[#3B82F6]">
                       <Icon className="h-7 w-7" strokeWidth={1.8} />
                     </div>
                     <div>
-                      <h4 className="font-display text-lg font-bold text-foreground">
+                      <h4 className="font-display text-lg font-bold text-white">
                         {benefit.title}
                       </h4>
-                      <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                      <p className="mt-2 text-sm leading-relaxed text-gray-400">
                         {benefit.desc}
                       </p>
                     </div>
@@ -140,18 +134,18 @@ export function Services() {
         </div>
 
         <Reveal delay={120}>
-          <div className="mx-auto mt-16 max-w-3xl rounded-3xl border border-border glass p-7 text-center shadow-2xl shadow-primary/10 md:p-9">
-            <h3 className="font-display text-2xl font-bold text-foreground md:text-3xl">
+          <div className="mx-auto mt-16 max-w-3xl rounded-3xl border border-white/10 bg-black p-7 text-center md:p-9">
+            <h3 className="font-display text-2xl font-bold text-white md:text-3xl">
               ¿Tienes una idea para tu negocio?
             </h3>
-            <p className="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground md:text-base">
+            <p className="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-gray-400 md:text-base">
               Cuéntanos qué necesitas y te orientamos con una solución clara, accesible y a medida.
             </p>
             <a
               href={WHATSAPP}
               target="_blank"
               rel="noreferrer"
-              className="mt-6 inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-primary to-accent px-7 py-4 font-semibold text-background shadow-[0_0_42px_-14px_var(--accent)] transition-all hover:-translate-y-0.5 hover:shadow-[0_0_54px_-12px_var(--accent)]"
+              className="mt-6 inline-flex items-center justify-center gap-2 rounded-full bg-blue-600 px-7 py-4 font-semibold text-white transition-colors hover:bg-blue-700"
             >
               Cotizar mi proyecto
               <ArrowRight className="h-4 w-4" />
