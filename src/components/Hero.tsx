@@ -1,6 +1,7 @@
-import { MessageCircle, ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight, Sparkles } from "lucide-react";
 import Image from "next/image"; // INGENIERO: Import corregido
 import { Reveal } from "./Reveal";
+import { WhatsAppIcon } from "./WhatsAppIcon";
 
 const WHATSAPP = "https://wa.me/59167423265";
 
@@ -8,7 +9,7 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="relative min-h-screen flex items-center pt-28 pb-20 overflow-hidden bg-black"
+      className="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden bg-black"
     >
       {/* Fondo negro sólido */}
       <div className="absolute inset-0 bg-black pointer-events-none" />
@@ -40,7 +41,7 @@ export function Hero() {
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 px-7 py-4 rounded-full font-medium bg-blue-600 text-white hover:bg-blue-700 transition-colors"
               >
-                <MessageCircle className="w-5 h-5" />
+                <WhatsAppIcon className="w-6 h-6" />
                 Habla con un Desarrollador
                 <ArrowRight className="w-4 h-4" />
               </a>

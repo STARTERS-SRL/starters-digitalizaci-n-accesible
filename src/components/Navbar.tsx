@@ -1,7 +1,9 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Menu, X, MessageCircle } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import { BrandLogo } from "./BrandLogo";
+import { WhatsAppIcon } from "./WhatsAppIcon";
 
 const WHATSAPP = "https://wa.me/59167423265";
 const links = [
@@ -27,17 +29,12 @@ export function Navbar() {
         scrolled ? "glass bg-black/80" : "bg-transparent"
       }`}
     >
-      <nav className="max-w-7xl mx-auto px-6 lg:px-10 h-20 py-4 flex items-center justify-between gap-6">
-        <a href="#top" className="flex items-center gap-3 group shrink-0">
-          <img src="/logo.png" alt="Starters Logo" className="h-10 w-auto object-contain" />
-          <div className="leading-tight">
-            <div className="font-bold text-xl text-foreground uppercase tracking-[0.35em]">
-              STARTERS
-            </div>
-            <div className="text-[11px] font-light uppercase tracking-[0.22em] text-muted-foreground">
-              SOFTWARE DEVELOPMENT
-            </div>
-          </div>
+      <nav className="max-w-7xl mx-auto px-6 lg:px-10 h-24 py-4 flex items-center justify-between gap-6">
+        <a href="#top" className="group shrink-0" aria-label="Ir al inicio">
+          <BrandLogo
+            priority
+            markClassName="h-16 w-56 sm:w-64 lg:w-72"
+          />
         </a>
 
         <ul className="hidden md:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
@@ -60,7 +57,7 @@ export function Navbar() {
             rel="noreferrer"
             className="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium bg-blue-600 text-white hover:bg-blue-700 transition-colors"
           >
-            <MessageCircle className="w-4 h-4" />
+            <WhatsAppIcon className="w-5 h-5" />
             Cotizar por WhatsApp
           </a>
           <button
@@ -93,7 +90,7 @@ export function Navbar() {
               rel="noreferrer"
               className="sm:hidden inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium bg-blue-600 text-white hover:bg-blue-700 transition-colors"
             >
-              <MessageCircle className="w-4 h-4" /> Cotizar por WhatsApp
+              <WhatsAppIcon className="w-5 h-5" /> Cotizar por WhatsApp
             </a>
           </ul>
         </div>

@@ -11,31 +11,26 @@ const benefits = [
 
 const processSteps = [
   {
-    number: "01",
     icon: Search,
     title: "Diagnóstico",
     desc: "Analizamos tus ideas, objetivos y necesidades.",
   },
   {
-    number: "02",
     icon: ClipboardList,
     title: "Planificación",
     desc: "Definimos el alcance, tecnologías y tiempos.",
   },
   {
-    number: "03",
     icon: Code2,
     title: "Desarrollo",
     desc: "Creamos tu solución con código limpio y seguro.",
   },
   {
-    number: "04",
     icon: Rocket,
     title: "Lanzamiento",
     desc: "Probamos, optimizamos y ponemos en producción.",
   },
   {
-    number: "05",
     icon: Headphones,
     title: "Soporte",
     desc: "Te acompañamos con soporte y mejora continua.",
@@ -128,9 +123,6 @@ export function About() {
                 return (
                   <Reveal key={step.title} delay={index * 90} className="h-full">
                     <article className="group relative flex h-full min-h-[15rem] flex-col rounded-2xl border border-white/10 bg-black p-5 text-center transition-colors duration-300 hover:border-blue-600/50">
-                      <div className="absolute -top-4 left-5 rounded-full border border-white/10 bg-black px-3 py-1 font-mono text-sm font-bold text-[#3B82F6]">
-                        {step.number}
-                      </div>
                       <div className="mx-auto mt-3 flex h-16 w-16 items-center justify-center rounded-2xl bg-blue-600/20 text-[#3B82F6]">
                         <Icon className="h-8 w-8" strokeWidth={1.8} />
                       </div>

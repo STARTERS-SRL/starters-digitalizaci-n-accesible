@@ -9,6 +9,7 @@ import {
   Users,
 } from "lucide-react";
 import { Reveal } from "./Reveal";
+import { WhatsAppIcon } from "./WhatsAppIcon";
 
 const WHATSAPP = "https://wa.me/59167423265";
 
@@ -147,6 +148,7 @@ export function Services() {
               rel="noreferrer"
               className="mt-6 inline-flex items-center justify-center gap-2 rounded-full bg-blue-600 px-7 py-4 font-semibold text-white transition-colors hover:bg-blue-700"
             >
+              <WhatsAppIcon className="h-6 w-6" />
               Cotizar mi proyecto
               <ArrowRight className="h-4 w-4" />
             </a>
