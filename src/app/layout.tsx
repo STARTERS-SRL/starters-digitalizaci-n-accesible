@@ -17,6 +17,10 @@ export const metadata: Metadata = {
     description: "Apps, sitios web y mantenimiento profesional a precios accesibles.",
     type: "website",
   },
+  // INGENIERO: icons va acá, fuera de openGraph
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
