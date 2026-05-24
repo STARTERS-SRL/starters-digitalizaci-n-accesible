@@ -76,12 +76,6 @@ export function Hero() {
         <Reveal delay={300} className="relative">
           <div className="relative animate-float">
             <div className="relative rounded-2xl overflow-hidden border border-white/10 bg-black">
-              <div className="flex items-center gap-1.5 px-4 py-3 border-b border-gray-700 bg-black">
-                <div className="w-2.5 h-2.5 rounded-full bg-red-500/70" />
-                <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/70" />
-                <div className="w-2.5 h-2.5 rounded-full bg-green-500/70" />
-                <div className="ml-3 text-[11px] text-gray-400 font-mono">starters.dev</div>
-              </div>
               {/* INGENIERO: Eteta <img> cambiada por <Image> de Next.js */}
               <Image
                 src="/dashboard1.jpg"
