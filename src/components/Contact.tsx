@@ -20,7 +20,12 @@ export function Contact() {
         <div className="max-w-2xl mx-auto">
           <Reveal delay={150}>
             <div className="space-y-5">
-              <ContactCard icon={Mail} title="Email" lines={["starters.devsoft@gmail.com"]} />
+              <ContactCard
+                icon={Mail}
+                title="Email"
+                lines={["starters.devsoft@gmail.com"]}
+                href="mailto:starters.devsoft@gmail.com"
+              />
               <ContactCard
                 icon={WhatsAppIcon}
                 title="Teléfonos / WhatsApp"
@@ -55,13 +60,15 @@ function ContactCard({
   icon: Icon,
   title,
   lines,
+  href,
 }: {
   icon: React.ComponentType<{ className?: string }>;
   title: string;
   lines: string[];
+  href?: string;
 }) {
-  return (
-    <div className="rounded-2xl border border-white/10 bg-black p-6 flex flex-col sm:flex-row sm:items-center gap-5 hover:border-blue-600/50 transition-colors">
+  const content = (
+    <>
       <div className="w-12 h-12 rounded-xl bg-blue-600/20 flex items-center justify-center flex-shrink-0">
         <Icon className="w-6 h-6 text-[#3B82F6]" />
       </div>
@@ -73,6 +80,23 @@ function ContactCard({
           </div>
         ))}
       </div>
+    </>
+  );
+
+  if (href) {
+    return (
+      <a
+        href={href}
+        className="rounded-2xl border border-white/10 bg-black p-6 flex flex-col sm:flex-row sm:items-center gap-5 hover:border-blue-600/50 transition-colors"
+      >
+        {content}
+      </a>
+    );
+  }
+
+  return (
+    <div className="rounded-2xl border border-white/10 bg-black p-6 flex flex-col sm:flex-row sm:items-center gap-5 hover:border-blue-600/50 transition-colors">
+      {content}
     </div>
   );
 }
