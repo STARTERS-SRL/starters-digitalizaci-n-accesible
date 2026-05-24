@@ -20,21 +20,21 @@ const socialLinks = [
   {
     icon: FacebookIcon,
     label: "Facebook",
-    href: "#",
+    href: "https://www.facebook.com/profile.php?id=61590138460840",
     className:
       "border-[#1877F2] bg-[#1877F2] text-white hover:shadow-[0_0_18px_rgba(24,119,242,0.45)]",
   },
   {
     icon: TiktokIcon,
     label: "TikTok",
-    href: "#",
+    href: "https://www.tiktok.com/@starters76?_r=1&_t=ZN-96cARjJkgdS",
     className:
       "border-white/15 bg-black text-white hover:border-[#25F4EE]/70 hover:shadow-[0_0_18px_rgba(37,244,238,0.28)]",
   },
   {
     icon: InstagramIcon,
     label: "Instagram",
-    href: "#",
+    href: "https://www.instagram.com/starters.devsoft/",
     className:
       "border-transparent bg-[linear-gradient(135deg,#feda75_0%,#fa7e1e_25%,#d62976_50%,#962fbf_75%,#4f5bd5_100%)] text-white hover:shadow-[0_0_18px_rgba(214,41,118,0.45)]",
   },
@@ -100,6 +100,8 @@ export function Footer() {
               <a
                 key={label}
                 href={href}
+                target="_blank"
+                rel="noreferrer"
                 aria-label={label}
                 className={`flex h-10 w-10 items-center justify-center rounded-xl border transition-all duration-300 ${className}`}
               >
@@ -191,6 +193,8 @@ export function Footer() {
               <a
                 key={label}
                 href={href}
+                target="_blank"
+                rel="noreferrer"
                 aria-label={label}
                 className={`flex h-11 w-11 items-center justify-center rounded-xl border transition-all duration-300 ${className}`}
               >
